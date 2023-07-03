@@ -417,8 +417,8 @@
                 width: 1.1em;
                 height: 1.1em;
                 background-color: currentColor;
-                -webkit-mask: url(https://assets.website-files.com/608fb40c3d9b077577fce197/60dd69136bc238e82174de73_external-link.svg) no-repeat 50% 50%;
-                mask: url(https://assets.website-files.com/608fb40c3d9b077577fce197/60dd69136bc238e82174de73_external-link.svg) no-repeat 50% 50%;
+                -webkit-mask: url(https://raw.githubusercontent.com/hmmmquan/Theme-1-Hoa-Sua/be4b69e2afd698c24be46bab03697107050057f2/link%20arrow.svg?token=AWW6DBAURMTRWP7G3PFWST3EUIQO4) no-repeat 50% 50%;
+                mask: url(https://raw.githubusercontent.com/hmmmquan/Theme-1-Hoa-Sua/be4b69e2afd698c24be46bab03697107050057f2/link%20arrow.svg?token=AWW6DBAURMTRWP7G3PFWST3EUIQO4) no-repeat 50% 50%;
                 margin: -0.3em -0.2em -0.25em 0.05em;
             }
             
@@ -832,7 +832,7 @@
             
                 {block:Text}
                 {block:NotReblog}
-                <div class="caption video">
+                <div class="caption {block:Date}video{/block:Date}">
                     {block:Date}
                     <div class="source-head">
                         <div class="avatar-image-container"><a href="{Permalink}"><img src="{PortraitURL-64}"></a></div>
@@ -844,7 +844,7 @@
                 </div>
                 {/block:NotReblog}
                 {block:RebloggedFrom}{block:Reblogs}
-                <div class="caption video">
+                <div class="caption {block:Date}video{/block:Date}">
                     <div class="source-head">
                         <div class="avatar-image-container"><a href="{Permalink}"><img src="{PortraitURL-64}"></a></div>
                         <span class="reblogger-username"><a href="{Permalink}">{Username}</a> {block:IsDeactivated}(deactivated){/block:IsDeactivated}{block:isOriginalEntry}{block:PinnedPostLabel}<br><i class="ph-bold ph-push-pin-simple"></i> Pinned{/block:PinnedPostLabel}{/block:isOriginalEntry}</span>
@@ -1108,6 +1108,7 @@
     </script>
     
     <!-- flexibleVideos.js -->
+    {block:Posts}{block:Date}
     <script src="https://rawgit.com/robinpx/tumblr/master/scripts/flexibleFrames/flexibleFrames.min.js"></script>
     <script>
         function flexFrame() {
@@ -1119,7 +1120,8 @@
         }
         
         $(document).ready(flexFrame);
-    </script>  
+    </script>
+    {/block:Date}{/block:Posts}
     
     <!-- sticky navbar -->
     <script>
