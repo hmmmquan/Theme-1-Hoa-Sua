@@ -417,8 +417,8 @@
                 width: 1.1em;
                 height: 1.1em;
                 background-color: currentColor;
-                -webkit-mask: url(https://raw.githubusercontent.com/hmmmquan/Theme-1-Hoa-Sua/be4b69e2afd698c24be46bab03697107050057f2/link%20arrow.svg?token=AWW6DBAURMTRWP7G3PFWST3EUIQO4) no-repeat 50% 50%;
-                mask: url(https://raw.githubusercontent.com/hmmmquan/Theme-1-Hoa-Sua/be4b69e2afd698c24be46bab03697107050057f2/link%20arrow.svg?token=AWW6DBAURMTRWP7G3PFWST3EUIQO4) no-repeat 50% 50%;
+                -webkit-mask: url(https://raw.githubusercontent.com/hmmmquan/Theme-1-Hoa-Sua/5941694474544c7c4105b36c20d08f5a437b2210/link%20arrow.svg) no-repeat 50% 50%;
+                mask: url(https://raw.githubusercontent.com/hmmmquan/Theme-1-Hoa-Sua/5941694474544c7c4105b36c20d08f5a437b2210/link%20arrow.svg) no-repeat 50% 50%;
                 margin: -0.3em -0.2em -0.25em 0.05em;
             }
             
