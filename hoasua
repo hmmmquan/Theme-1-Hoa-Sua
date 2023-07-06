@@ -411,7 +411,7 @@
                 padding: 0 20px;
             }
             
-            .caption a:after {
+            .caption a:after, .old-caption a:after {
                 display: inline-block;
                 content: '';
                 width: 1.1em;
